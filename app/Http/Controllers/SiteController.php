@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Artisan;
 class SiteController extends Controller
 {
     public function index(){
+        session("username","nieqisong");
         return view("welcome");
     }
 }
