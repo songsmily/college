@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -82,9 +83,18 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+                    <form action="" method="post">
+                    <img src="{{ captcha_src() }}" onclick="this.src='{{ captcha_src() }}'+Math.random()" alt="111">
+                        <input type="text" name="captha">
+                        <input type="submit" value="提交">
+                    </form>
                 </div>
 
+
             </div>
+        </div>
+        <div>
+            {{$result->links()}}
         </div>
     </body>
 </html>

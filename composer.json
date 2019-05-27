@@ -12,8 +12,12 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+        "mews/captcha": "~2.0",
         "phpoffice/phpexcel": "^1.8",
-        "tecnickcom/tcpdf": "^6.2"
+        "tecnickcom/tcpdf": "^6.2",
+        "intervention/image": "2.0.15"
+
+
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -40,6 +44,9 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+        ],
+        "files": [
+            "app/Helpers/functions.php"
         ]
     },
     "autoload-dev": {
