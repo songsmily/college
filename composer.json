@@ -13,7 +13,7 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "mews/captcha": "~2.0",
-        "phpoffice/phpexcel": "^1.8",
+        "phpoffice/phpexcel": "1.8.1",
         "tecnickcom/tcpdf": "^6.2",
         "intervention/image": "2.0.15"
 
@@ -46,7 +46,9 @@
             "database/factories"
         ],
         "files": [
-            "app/Helpers/functions.php"
+            "app/Helpers/functions.php",
+            "app/Helpers/functionadmin.php",
+            "app/Helpers/functionindex.php"
         ]
     },
     "autoload-dev": {
